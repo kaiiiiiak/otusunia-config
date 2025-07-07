@@ -332,49 +332,49 @@
         };
 
         seven {
-            bindings = <&kp KP_N7>;
+            bindings = <&kp N7>;
             key-positions = <4 5>;
             layers = <1>;
         };
 
         seventwo {
-            bindings = <&kp KP_N7>;
+            bindings = <&kp N7>;
             key-positions = <3 2>;
             layers = <1>;
         };
 
         eight {
-            bindings = <&kp KP_N8>;
+            bindings = <&kp N8>;
             key-positions = <5 6>;
             layers = <1>;
         };
 
         eighttwo {
-            bindings = <&kp KP_N8>;
+            bindings = <&kp N8>;
             key-positions = <2 1>;
             layers = <1>;
         };
 
         nine {
-            bindings = <&kp KP_N9>;
+            bindings = <&kp N9>;
             key-positions = <13 12>;
             layers = <1>;
         };
 
         ninetwo {
-            bindings = <&kp KP_N9>;
+            bindings = <&kp N9>;
             key-positions = <11 10>;
             layers = <1>;
         };
 
         zero {
-            bindings = <&kp KP_N0>;
+            bindings = <&kp N0>;
             key-positions = <13 14>;
             layers = <1>;
         };
 
         zerotwo {
-            bindings = <&kp KP_N0>;
+            bindings = <&kp N0>;
             key-positions = <9 10>;
             layers = <1>;
         };
