@@ -568,9 +568,9 @@
 
         layer_3 {
             bindings = <
-&kp LC(X)  &kp LC(Z)  &kp LC(R)  &kp LC(Y)  &kp LEFT_GUI    &kp UP_ARROW    &kp LEFT_ALT     &kp TAB
-&trans     &kp LC(C)  &kp LC(A)  &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-           &trans     &trans                                &trans          &trans
+&kp LC(X)  &kp LC(Z)      &kp LC(R)  &kp LC(Y)  &kp LEFT_GUI    &kp UP_ARROW    &kp LEFT_ALT     &kp TAB
+&trans     &kp LC(C)      &kp LC(A)  &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+           &kp LG(LS(S))  &kp LG(V)                             &trans          &trans
             >;
         };
 
