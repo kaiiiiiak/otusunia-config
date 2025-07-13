@@ -504,6 +504,12 @@
             bindings = <&kp TAB>;
             key-positions = <11 10 9 8>;
         };
+
+        win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <2 1>;
+            layers = <0>;
+        };
     };
 
     behaviors {
