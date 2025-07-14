@@ -48,13 +48,13 @@
 
         p {
             bindings = <&kp P>;
-            key-positions = <6 7>;
+            key-positions = <4 6 5>;
             layers = <0>;
         };
 
         f {
             bindings = <&kp F>;
-            key-positions = <4 7>;
+            key-positions = <7 4>;
             layers = <0>;
         };
 
@@ -66,13 +66,13 @@
 
         c {
             bindings = <&kp C>;
-            key-positions = <12 14>;
+            key-positions = <6 4>;
             layers = <0>;
         };
 
         v {
             bindings = <&kp V>;
-            key-positions = <15 13>;
+            key-positions = <5 6 7>;
             layers = <0>;
         };
 
@@ -83,7 +83,7 @@
 
         l {
             bindings = <&kp L>;
-            key-positions = <4 6>;
+            key-positions = <6 7>;
             layers = <0>;
         };
 
