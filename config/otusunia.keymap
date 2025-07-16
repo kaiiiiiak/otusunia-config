@@ -87,18 +87,6 @@
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <14 15>;
-            layers = <0>;
-        };
-
-        enter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <9 8>;
-            layers = <0>;
-        };
-
         space {
             bindings = <&kp SPACE>;
             key-positions = <13 12>;
@@ -183,15 +171,9 @@
             layers = <0>;
         };
 
-        haihuni {
-            bindings = <&kp MINUS>;
-            key-positions = <15 4>;
-            layers = <0>;
-        };
-
-        haihuniii {
-            bindings = <&kp MINUS>;
-            key-positions = <3 8>;
+        enter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <19 18>;
             layers = <0>;
         };
 
@@ -414,6 +396,12 @@
             bindings = <&kp LG(L)>;
             key-positions = <17 11>;
             layers = <3>;
+        };
+
+        enterleft {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <17 16>;
+            layers = <0>;
         };
     };
 
