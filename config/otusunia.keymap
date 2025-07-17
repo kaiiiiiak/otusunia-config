@@ -48,31 +48,25 @@
 
         p {
             bindings = <&kp P>;
-            key-positions = <4 6 5>;
+            key-positions = <12 18>;
             layers = <0>;
         };
 
         f {
             bindings = <&kp F>;
-            key-positions = <7 4>;
-            layers = <0>;
-        };
-
-        x {
-            bindings = <&kp X>;
-            key-positions = <5 7>;
+            key-positions = <18 19>;
             layers = <0>;
         };
 
         c {
             bindings = <&kp C>;
-            key-positions = <6 4>;
+            key-positions = <4 5 6>;
             layers = <0>;
         };
 
         v {
             bindings = <&kp V>;
-            key-positions = <5 6 7>;
+            key-positions = <19 15>;
             layers = <0>;
         };
 
@@ -83,7 +77,7 @@
 
         l {
             bindings = <&kp L>;
-            key-positions = <6 7>;
+            key-positions = <4 12 5 13>;
             layers = <0>;
         };
 
@@ -93,9 +87,9 @@
             layers = <0>;
         };
 
-        space2 {
-            bindings = <&kp SPACE>;
-            key-positions = <10 11>;
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <7 14>;
             layers = <0>;
         };
 
@@ -105,75 +99,21 @@
             layers = <0>;
         };
 
-        back2 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 10>;
-            layers = <0>;
-        };
-
         hankaku {
             bindings = <&kp GRAVE>;
             key-positions = <14 13 12>;
             layers = <0>;
         };
 
-        hankaku2 {
-            bindings = <&kp GRAVE>;
-            key-positions = <11 10 9>;
-            layers = <0>;
-        };
-
-        conm {
-            bindings = <&kp COMMA>;
-            key-positions = <13 4>;
-            layers = <0>;
-        };
-
-        conm2 {
-            bindings = <&kp COMMA>;
-            key-positions = <3 10>;
-            layers = <0>;
-        };
-
-        dot {
-            bindings = <&kp PERIOD>;
-            key-positions = <12 5>;
-            layers = <0>;
-        };
-
-        dot2 {
-            bindings = <&kp PERIOD>;
-            key-positions = <2 11>;
-            layers = <0>;
-        };
-
         bikkuri {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <6 15>;
-            layers = <0>;
-        };
-
-        bikkuri2 {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 8>;
-            layers = <0>;
-        };
-
-        hatena {
-            bindings = <&kp QUESTION>;
-            key-positions = <7 14>;
+            key-positions = <3 2>;
             layers = <0>;
         };
 
         hatena2 {
             bindings = <&kp QUESTION>;
-            key-positions = <0 9>;
-            layers = <0>;
-        };
-
-        enter {
-            bindings = <&kp KP_ENTER>;
-            key-positions = <19 18>;
+            key-positions = <10 11>;
             layers = <0>;
         };
 
@@ -398,9 +338,9 @@
             layers = <3>;
         };
 
-        enterleft {
-            bindings = <&kp KP_ENTER>;
-            key-positions = <17 16>;
+        x {
+            bindings = <&kp X>;
+            key-positions = <6 7 15 14>;
             layers = <0>;
         };
     };
