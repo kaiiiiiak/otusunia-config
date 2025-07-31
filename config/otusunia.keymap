@@ -42,31 +42,31 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <5 4>;
+            key-positions = <14 19>;
             layers = <0>;
         };
 
         p {
             bindings = <&kp P>;
-            key-positions = <12 18>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 
         f {
             bindings = <&kp F>;
-            key-positions = <18 19>;
+            key-positions = <5 4>;
             layers = <0>;
         };
 
         c {
             bindings = <&kp C>;
-            key-positions = <14 13>;
+            key-positions = <13 12>;
             layers = <0>;
         };
 
         v {
             bindings = <&kp V>;
-            key-positions = <19 14>;
+            key-positions = <18 19>;
             layers = <0>;
         };
 
