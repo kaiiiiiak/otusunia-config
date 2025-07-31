@@ -89,7 +89,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <0 8>;
+            key-positions = <1 9>;
             layers = <0>;
         };
 
@@ -101,7 +101,7 @@
 
         hankaku {
             bindings = <&kp GRAVE>;
-            key-positions = <1 9>;
+            key-positions = <0 8>;
             layers = <0>;
         };
 
