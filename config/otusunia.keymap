@@ -137,9 +137,9 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&mylt_behavior 1 SPACE  &kp MINUS  &kp U     &kp E  &kp K  &kp R  &kp Y  &kp BACKSPACE
-&kp INT_KANA            &kp I      &kp A     &kp O  &kp T  &kp N  &kp S  &kp ENTER
-                        &mkp MB2   &mkp MB1                &kp M  &kp H
+&mylt_behavior 1 SPACE      &kp MINUS  &kp U     &kp E  &kp K  &kp R  &kp Y  &kp BACKSPACE
+&mymt_behavior LANG2 LANG1  &kp I      &kp A     &kp O  &kp T  &kp N  &kp S  &kp ENTER
+                            &mkp MB2   &mkp MB1                &kp M  &kp H
             >;
         };
 
