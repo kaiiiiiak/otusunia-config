@@ -153,7 +153,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp COMMA        &kp PERIOD    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &trans  &kp COMMA        &kp PERIOD    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &text "「"   &text "」"
 &trans  &trans  &kp EXCLAMATION  &kp QUESTION  &kp HASH          &trans             &trans  &trans
         &trans  &trans                                           &trans             &trans
             >;
