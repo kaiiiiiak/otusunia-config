@@ -81,204 +81,6 @@
             layers = <0>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <3 11>;
-            layers = <0>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <1 9>;
-            layers = <0>;
-        };
-
-        back {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <2 10>;
-            layers = <0>;
-        };
-
-        hankaku {
-            bindings = <&kp GRAVE>;
-            key-positions = <0 8>;
-            layers = <0>;
-        };
-
-        bikkuri {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <3 2>;
-            layers = <0>;
-        };
-
-        hatena2 {
-            bindings = <&kp QUESTION>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
-        seven {
-            bindings = <&kp N7>;
-            key-positions = <4 5>;
-            layers = <1>;
-        };
-
-        seventwo {
-            bindings = <&kp N7>;
-            key-positions = <3 2>;
-            layers = <1>;
-        };
-
-        eight {
-            bindings = <&kp N8>;
-            key-positions = <5 6>;
-            layers = <1>;
-        };
-
-        eighttwo {
-            bindings = <&kp N8>;
-            key-positions = <2 1>;
-            layers = <1>;
-        };
-
-        nine {
-            bindings = <&kp N9>;
-            key-positions = <13 12>;
-            layers = <1>;
-        };
-
-        zero {
-            bindings = <&kp N0>;
-            key-positions = <13 14>;
-            layers = <1>;
-        };
-
-        plus {
-            bindings = <&kp LS(SEMI)>;
-            key-positions = <4 12>;
-            layers = <1>;
-        };
-
-        plus2 {
-            bindings = <&kp LS(SEMI)>;
-            key-positions = <11 3>;
-            layers = <1>;
-        };
-
-        astrk {
-            bindings = <&kp LS(SQT)>;
-            key-positions = <5 13>;
-            layers = <1>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <6 14>;
-            layers = <1>;
-        };
-
-        percent {
-            bindings = <&kp LS(N5)>;
-            key-positions = <6 4>;
-            layers = <1>;
-        };
-
-        equal {
-            bindings = <&kp LS(MINUS)>;
-            key-positions = <12 14>;
-            layers = <1>;
-        };
-
-        equal2 {
-            bindings = <&kp LS(MINUS)>;
-            key-positions = <11 9>;
-            layers = <1>;
-        };
-
-        lyamakakko {
-            bindings = <&kp LS(COMMA)>;
-            key-positions = <5 7>;
-            layers = <4>;
-        };
-
-        ryamakakko {
-            bindings = <&kp LS(DOT)>;
-            key-positions = <13 15>;
-            layers = <4>;
-        };
-
-        and {
-            bindings = <&kp LS(N6)>;
-            key-positions = <5 6>;
-            layers = <5>;
-        };
-
-        pipe {
-            bindings = <&kp LS(INT3)>;
-            key-positions = <6 7>;
-            layers = <5>;
-        };
-
-        at {
-            bindings = <&kp LBKT>;
-            key-positions = <13 14>;
-            layers = <5>;
-        };
-
-        hash {
-            bindings = <&kp LS(N3)>;
-            key-positions = <14 15>;
-            layers = <5>;
-        };
-
-        bslash {
-            bindings = <&kp INT1>;
-            key-positions = <5 13>;
-            layers = <5>;
-        };
-
-        yen {
-            bindings = <&kp INT3>;
-            key-positions = <6 14>;
-            layers = <5>;
-        };
-
-        doll {
-            bindings = <&kp LS(N4)>;
-            key-positions = <7 15>;
-            layers = <5>;
-        };
-
-        wintab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <4 12>;
-            layers = <6>;
-        };
-
-        relod {
-            bindings = <&kp LC(R)>;
-            key-positions = <6 14>;
-            layers = <6>;
-        };
-
-        search {
-            bindings = <&kp LC(F)>;
-            key-positions = <7 15>;
-            layers = <6>;
-        };
-
-        close {
-            bindings = <&kp LC(W)>;
-            key-positions = <14 12>;
-            layers = <6>;
-        };
-
-        kaigyou {
-            bindings = <&kp LC(ENTER)>;
-            key-positions = <14 15>;
-            layers = <6>;
-        };
-
         btclr_all {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <12 13 14 15 18 19>;
@@ -294,48 +96,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 14 13 12>;
-        };
-
-        win {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <2 1 3>;
-            layers = <3>;
-        };
-
-        left {
-            bindings = <&kp LG(LEFT)>;
-            key-positions = <2 1>;
-            layers = <3>;
-        };
-
-        right {
-            bindings = <&kp LG(RIGHT)>;
-            key-positions = <2 3>;
-            layers = <3>;
-        };
-
-        leftmoni {
-            bindings = <&kp LG(LS(LEFT))>;
-            key-positions = <9 10>;
-            layers = <3>;
-        };
-
-        rightmoni {
-            bindings = <&kp LG(LS(RIGHT))>;
-            key-positions = <10 11>;
-            layers = <3>;
-        };
-
-        file {
-            bindings = <&kp LG(E)>;
-            key-positions = <16 17>;
-            layers = <3>;
-        };
-
-        lock {
-            bindings = <&kp LG(L)>;
-            key-positions = <17 11>;
-            layers = <3>;
         };
 
         x {
@@ -377,57 +137,17 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&mylt_behavior 1 COMMA   &kp MINUS                    &mylt_behavior 6 U           &mylt_behavior 4 E  &mylt_behavior 4 K  &mylt_behavior 6 R           &kp Y                        &mkp MB1
-&mylt_behavior 3 PERIOD  &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &mylt_behavior 5 O  &mylt_behavior 5 T  &mymt_behavior LEFT_SHIFT N  &mymt_behavior LEFT_SHIFT S  &mkp MB2
-                         &mkp MB2                     &mkp MB1                                                             &kp M                        &kp H
+&mylt_behavior 1 SPACE  &kp MINUS  &kp U     &kp E  &kp K  &kp R  &kp Y  &kp BACKSPACE
+&kp INT_KANA            &kp I      &kp A     &kp O  &kp T  &kp N  &kp S  &kp ENTER
+                        &mkp MB2   &mkp MB1                &kp M  &kp H
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &kp N3  &kp N2  &kp N1  &kp N1  &kp N2  &kp N3  &trans
-&none   &kp N6  &kp N5  &kp N4  &kp N4  &kp N5  &kp N6  &none
-        &trans  &trans                  &trans  &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&to 0  &to 0   &mkp MB2  &mkp MB1  &mkp MB1  &mkp MB2  &to 0   &to 0
-&to 0  &to 0   &to 0     &to 0     &to 0     &to 0     &to 0   &to 0
-       &trans  &trans                        &trans    &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&kp LC(X)  &kp LC(Z)      &kp LC(R)  &kp LC(Y)  &kp LEFT_GUI    &kp UP_ARROW    &kp LEFT_ALT     &kp TAB
-&trans     &kp LC(C)      &kp LC(A)  &kp LC(V)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-           &kp LG(LS(S))  &kp LG(V)                             &trans          &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp LS(RBKT)  &kp RBKT  &kp LS(N8)  &trans  &trans  &kp LS(N8)  &kp RBKT  &kp LS(RBKT)
-&kp LS(NUHS)  &kp NUHS  &kp LS(N9)  &trans  &trans  &kp LS(N9)  &kp NUHS  &kp LS(NUHS)
-              &trans    &trans                      &trans      &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&kp LS(LBKT)  &kp LS(N2)  &kp LS(N7)  &bt BT_NXT  &bt BT_NXT  &kp LS(N7)  &kp LS(N2)  &kp LS(LBKT)
-&kp LS(INT1)  &kp SEMI    &kp SQT     &trans      &trans      &kp SQT     &kp SEMI    &kp LS(INT1)
-              &trans      &trans                              &trans      &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp LC(Z)  &kp LC(C)  &trans     &kp LC(V)  &kp LC(V)  &trans     &kp LC(C)  &kp LC(Z)
-&kp LC(Y)  &kp LC(X)  &kp LC(A)  &kp LC(S)  &kp LC(S)  &kp LC(A)  &kp LC(X)  &kp LC(Y)
-           &trans     &trans                           &trans     &trans
+&trans  &trans          &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
+&trans  &kp LEFT_SHIFT  &trans  &trans  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8
+        &trans          &trans                        &kp NUMBER_9  &kp NUMBER_0
             >;
         };
     };
