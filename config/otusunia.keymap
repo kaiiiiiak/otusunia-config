@@ -153,9 +153,9 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp COMMA        &kp PERIOD    &kp LBKT  &kp RBKT        &trans  &trans
-&trans  &trans  &kp EXCLAMATION  &kp QUESTION  &kp HASH  &kp UNDERSCORE  &trans  &trans
-        &trans  &trans                                   &trans &trans
+&kp LA(N3)  &trans          &kp COMMA        &kp PERIOD    &kp LBKT        &kp RBKT        &kp UNDERSCORE   &kp SLASH
+&trans      &kp LEFT_SHIFT  &kp EXCLAMATION  &kp QUESTION  &kp LEFT_ARROW  &kp UP_ARROW    &trans           &trans
+            &trans          &trans                                         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
