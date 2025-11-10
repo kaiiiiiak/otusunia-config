@@ -137,8 +137,8 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&mylt_behavior 1 SPACE      &mylt_behavior 2 MINUS       &kp U                        &kp E  &kp K  &mylt_behavior 3 R  &kp Y  &kp BACKSPACE
-&mymt_behavior LANG2 LANG1  &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &kp N               &kp S  &kp ENTER
+&mylt_behavior 1 SPACE      &mylt_behavior 2 MINUS       &kp U                        &kp E  &kp K  &kp R               &kp Y  &kp BACKSPACE
+&mymt_behavior LANG2 LANG1  &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &mylt_behavior 3 N  &kp S  &kp ENTER
                             &kp COMMA                    &kp PERIOD                                 &kp M               &kp H
             >;
         };
@@ -161,16 +161,16 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LG(V)  &trans     &kp LG(C)  &kp LG(Z)
-&trans  &trans  &trans  &trans  &kp LG(R)  &kp LG(A)  &kp LG(X)  &kp LG(LS(N3))
-        &trans  &trans                     &trans     &kp LG(O)
+&trans  &trans  &trans  &trans  &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
+&trans  &trans  &trans  &trans  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
+        &trans  &trans                     &kp LG(A)  &kp LG(X)
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
         &trans  &trans                  &trans    &trans
             >;
         };
