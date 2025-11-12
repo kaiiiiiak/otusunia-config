@@ -165,7 +165,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &kp LG(H)  &kp LG(TAB)    &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
-&trans  &trans  &trans     &kp LG(SPACE)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
+&trans  &kp A   &trans     &kp LG(SPACE)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
         &trans  &trans                               &kp LG(A)  &kp LG(X)
             >;
         };
