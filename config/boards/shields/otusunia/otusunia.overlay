@@ -1,62 +1,53 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <input/processors.dtsi>
+#include <input/processors.dtsi>   /* ← 追加 */
 
-/ {
-	chosen {
-		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
-	};
-	
-	kscan0: kscan {
-		compatible = "zmk,kscan-gpio-charlieplex";
-		label = "KSCAN";
+ / {
+ 	chosen {
+ 		zmk,kscan = &kscan0;
+ 		zmk,matrix_transform = &default_transform;
+ 	};
 
-        	gpios
-          	= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-          	, <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-          	, <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-          	, <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-		, <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) >
-	  	;
-	};
+ 	kscan0: kscan {
+ 		compatible = "zmk,kscan-gpio-charlieplex";
+ 		label = "KSCAN";
+ 		gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+ 		       , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+ 		       , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+ 		       , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+ 		       , <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+ 	};
 
-
-	default_transform: keymap_transform_0 {
-		compatible = "zmk,matrix-transform";
-		rows = <3>;
-		columns = <8>;
-		map = <
-			RC(1,0) RC(3,0) RC(2,1) RC(0,2) RC(3,2) RC(0,3) RC(4,3) RC(2,4)   
-			RC(2,0) RC(4,0) RC(3,1) RC(1,2) RC(4,2) RC(1,3) RC(0,4) RC(3,4)
-				RC(0,1) RC(4,1) 		RC(2,3) RC(1,4)
-		>;
-	};
-
+ 	default_transform: keymap_transform_0 {
+ 		compatible = "zmk,matrix-transform";
+ 		rows = <3>;
+ 		columns = <8>;
+ 		map = <
+ 			RC(1,0) RC(3,0) RC(2,1) RC(0,2) RC(3,2) RC(0,3) RC(4,3) RC(2,4)
+ 			RC(2,0) RC(4,0) RC(3,1) RC(1,2) RC(4,2) RC(1,3) RC(0,4) RC(3,4)
+ 				RC(0,1) RC(4,1)        RC(2,3) RC(1,4)
+ 		>;
+ 	};
 };
 
 &pinctrl {
     spi0_default: spi0_default {
-
-		group1 {
-			psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-				<NRF_PSEL(SPIM_MOSI, 1, 14)>,
-				<NRF_PSEL(SPIM_MISO, 1, 14)>;
-		};
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
+                    <NRF_PSEL(SPIM_MOSI, 1, 14)>,
+                    <NRF_PSEL(SPIM_MISO, 1, 14)>;
+        };
     };
-
     spi0_sleep: spi0_sleep {
         group1 {
-			psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-				<NRF_PSEL(SPIM_MOSI, 1, 14)>,
-				<NRF_PSEL(SPIM_MISO, 1, 14)>;
-			low-power-enable;
-		};
+            psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
+                    <NRF_PSEL(SPIM_MOSI, 1, 14)>,
+                    <NRF_PSEL(SPIM_MISO, 1, 14)>;
+            low-power-enable;
+        };
     };
 };
 
-&uart0 {
-	status = "disabled";
-};
+&uart0 { status = "disabled"; };
 
 &spi0 {
     status = "okay";
@@ -72,28 +63,35 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	duplex = <2048>; // required by 3-wire spi
+        duplex = <2048>; // required by 3-wire spi
 
-        /*   optional features   */
+        /* optional features */
         // snipe-layers = <1>;
         scroll-layers = <2 3 4>;
-        // automouse-layer = <1>;
+
+        // automouse-layer = <1>;   /* ← 内蔵AMLは無効化 */
+        // cpi = <600>;             /* ← 任意: 微小動作が気になるなら下げる */
     };
 };
 
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    /* マウス入力が来たらレイヤー1を 5000ms（5秒）だけ有効化 */
-    input-processors = <&zip_temp_layer 1 5000>;
-  };
- /* 一時レイヤー（Temporary Layer）本体の定義 */
-    zip_temp_layer: zip_temp_layer {
-    compatible = "zmk,input-processor-temp-layer";
-    #input-processor-cells = <2>;
+/* ここから AML（入力プロセッサ方式） */
+ / {
+   trackball_listener: trackball_listener {
+     compatible = "zmk,input-listener";
+     device = <&trackball>;
+     /* 入力が来たらレイヤー1を 8000ms だけ有効化 */
+     input-processors = <&zip_temp_layer 1 8000>;
+   };
 
-    /* タイピング直後の“ちょい触れ”で発火しないようにするしきい値 */
-    require-prior-idle-ms = <300>;   /* 150〜300で調整 */
-}; 
+   zip_temp_layer: zip_temp_layer {
+     compatible = "zmk,input-processor-temp-layer";
+     #input-processor-cells = <2>;
 
+     /* タイピング直後は発火しない（誤発火対策） */
+     require-prior-idle-ms = <200>;
+
+     /* 任意: マウス用クリック等は押しても解除させたくない場合に物理番号を除外
+      * excluded-positions = <16 17 18>;
+      */
+   };
+};
