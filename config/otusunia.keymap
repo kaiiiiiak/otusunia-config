@@ -137,9 +137,9 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&mylt_behavior 2 SPACE      &mylt_behavior 3 MINUS       &kp U                        &kp E  &kp K  &kp R               &kp Y  &kp BACKSPACE
-&mymt_behavior LANG2 LANG1  &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &mylt_behavior 4 N  &kp S  &kp ENTER
-                            &kp COMMA                    &kp PERIOD                                 &kp M               &kp H
+&mymt_behavior LANGUAGE_2 LANGUAGE_1  &kp MINUS                    &kp U                        &kp E  &kp K  &kp R               &kp Y  &kp BACKSPACE
+&mylt_behavior 2 SPACE                &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &mylt_behavior 4 N  &kp S  &mylt_behavior 3 ENTER
+                                      &kp COMMA                    &kp PERIOD                                 &kp M               &kp H
             >;
         };
 
@@ -161,17 +161,17 @@
 
         layer_3 {
             bindings = <
-&trans  &trans          &trans  &trans  &kp LBKT        &kp RBKT        &kp EXCLAMATION  &kp QUESTION
-&trans  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp UNDERSCORE   &kp SLASH
-        &trans          &trans                          &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LEFT_BRACKET  &kp LEFT_BRACKET  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &trans           &kp DELETE
+&trans            &kp LEFT_SHIFT    &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &trans           &trans
+                  &kp LA(N8)        &kp HASH                                       &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
-&trans  &trans  &trans  &trans  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
-        &trans  &trans                     &kp LG(A)  &kp LG(X)
+&trans  &trans  &trans  &kp LG(TAB)    &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
+&trans  &trans  &trans  &kp LG(MINUS)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
+        &trans  &trans                            &kp LG(A)  &kp LG(X)
             >;
         };
     };
