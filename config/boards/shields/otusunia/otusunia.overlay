@@ -86,7 +86,7 @@
     compatible = "zmk,input-listener";
     device = <&trackball>;
     /* マウス入力が来たらレイヤー1を 5000ms（5秒）だけ有効化 */
-    input-processors = <&zip_temp_layer 1 5000>
+    input-processors = <&zip_temp_layer 1 5000>;
   };
  /* 一時レイヤー（Temporary Layer）本体の定義 */
     zip_temp_layer: zip_temp_layer {
