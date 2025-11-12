@@ -91,7 +91,7 @@
      require-prior-idle-ms = <200>;
 
      /* 任意: マウス用クリック等は押しても解除させたくない場合に物理番号を除外
-      * excluded-positions = <16 17 18>;
+      * excluded-positions = <5 6>;
       */
    };
 };
