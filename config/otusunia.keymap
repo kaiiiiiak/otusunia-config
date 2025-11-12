@@ -93,11 +93,6 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <15 14 13 12>;
-        };
-
         x {
             bindings = <&kp X>;
             key-positions = <14 13 18 19>;
@@ -169,9 +164,9 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &kp LG(TAB)    &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
-&trans  &trans  &trans  &kp LG(MINUS)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
-        &trans  &trans                            &kp LG(A)  &kp LG(X)
+&trans  &trans  &kp LG(H)  &kp LG(TAB)    &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
+&trans  &trans  &trans     &kp LG(MINUS)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
+        &trans  &trans                               &kp LG(A)  &kp LG(X)
             >;
         };
     };
