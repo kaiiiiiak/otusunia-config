@@ -156,7 +156,7 @@
 
         layer_3 {
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACE  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &trans           &kp DELETE
+&kp LEFT_BRACKET  &kp RIGHT_BRACE  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &kp DELETE       &kp LEFT_SHIFT
 &kp SLASH         &kp LEFT_SHIFT   &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &trans           &trans
                   &kp LA(N8)       &kp HASH                                       &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
