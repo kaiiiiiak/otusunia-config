@@ -98,6 +98,11 @@
             key-positions = <14 13 18 19>;
             layers = <0>;
         };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <0 8>;
+        };
     };
 
     behaviors {
