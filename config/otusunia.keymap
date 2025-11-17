@@ -162,7 +162,7 @@
         layer_3 {
             bindings = <
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &kp DELETE       &kp LEFT_SHIFT
-&kp SLASH         &kp LEFT_SHIFT     &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &trans           &trans
+&kp SLASH         &kp LEFT_SHIFT     &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &kp LEFT_GUI     &trans
                   &kp LA(N8)         &kp HASH                                       &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
@@ -170,7 +170,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &kp LG(H)  &kp LG(TAB)    &kp LG(R)  &trans     &kp LG(O)  &kp LG(Z)
-&trans  &kp A   &trans     &kp LG(SPACE)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
+&trans  &trans  &trans     &kp LG(SPACE)  &kp LG(V)  &trans     &kp LG(C)  &kp LG(LS(N3))
         &trans  &trans                               &kp LG(A)  &kp LG(X)
             >;
         };
