@@ -62,17 +62,16 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
+
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        motion-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;  // ← 追加
+        motion-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
 
-        duplex = <2048>; // required by 3-wire spi
+        zephyr,axis-x = <INPUT_REL_X>;
+        zephyr,axis-y = <INPUT_REL_Y>;
 
-        /* optional features */
-        // snipe-layers = <1>;
+        duplex = <2048>;
+
         scroll-layers = <2 3 4>;
-
-        // automouse-layer = <1>;   /* ← 内蔵AMLは無効化 */
-        // cpi = <600>;             /* ← 任意: 微小動作が気になるなら下げる */
     };
 };
 
