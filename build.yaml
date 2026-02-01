@@ -18,7 +18,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: seeedo_xiao_ble
     shield: otusunia
-  - board: seeeduino_xiao_ble
+  - board: seeed_xiao_ble
     shield: settings_reset
