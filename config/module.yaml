@@ -1,0 +1,4 @@
+name: otusunia-config
+build:
+  settings:
+    dts_root: .
