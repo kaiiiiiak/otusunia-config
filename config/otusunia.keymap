@@ -71,12 +71,12 @@
         };
 
         q {
-            bindings = <&kp Q>;
+            bindings = <&kp L>;
             key-positions = <4 12 18 13>;
         };
 
         l {
-            bindings = <&kp L>;
+            bindings = <&kp Q>;
             key-positions = <13 14 6 5>;
             layers = <0>;
         };
