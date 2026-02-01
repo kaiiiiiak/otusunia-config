@@ -63,7 +63,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
 
-        irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        
         motion-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
 
         zephyr,axis-x = <INPUT_REL_X>;
