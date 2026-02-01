@@ -137,9 +137,9 @@
             // ------------------------------------------------------------------------------------------
 
             bindings = <
-&mymt_behavior LANGUAGE_2 LANGUAGE_1  &kp MINUS                    &kp U                        &kp E  &kp K  &kp R               &kp Y  &kp BACKSPACE
-&mylt_behavior 2 SPACE                &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &mylt_behavior 4 N  &kp S  &mylt_behavior 3 ENTER
-                                      &kp COMMA                    &kp PERIOD                                 &kp M               &kp H
+&kp LS(SPACE)           &kp MINUS                    &kp U                        &kp E  &kp K  &kp R               &kp Y  &kp BACKSPACE
+&mylt_behavior 2 SPACE  &mymt_behavior LEFT_SHIFT I  &mymt_behavior LEFT_SHIFT A  &kp O  &kp T  &mylt_behavior 4 N  &kp S  &mylt_behavior 3 ENTER
+                        &kp COMMA                    &kp PERIOD                                 &kp M               &kp H
             >;
         };
 
