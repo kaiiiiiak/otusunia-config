@@ -77,7 +77,7 @@
 };
 
 /* ここから AML（入力プロセッサ方式） */
- / {
+/ {
    trackball_listener: trackball_listener {
      compatible = "zmk,input-listener";
      device = <&trackball>;
