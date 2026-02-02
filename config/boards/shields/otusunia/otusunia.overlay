@@ -49,6 +49,13 @@
 
 &uart0 { status = "disabled"; };
 
+/ {
+    pointing_device: pointing_device {
+        compatible = "zmk,pointing-device";
+        device = <&trackball>;
+    };
+};
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
