@@ -153,16 +153,16 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans        &trans  &kp N1  &kp N2  &kp N3  &kp N4
-&trans  &trans  &kp LEFT_ALT  &trans  &kp N5  &kp N6  &kp N7  &kp N8
-        &trans  &trans                        &kp N9  &kp N0
+&trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4
+&trans  &trans  &trans  &trans  &kp N5  &kp N6  &kp N7  &kp N8
+        &trans  &trans                  &kp N9  &kp N0
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &kp DELETE       &kp LEFT_SHIFT
-&kp SLASH             &kp LEFT_SHIFT         &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &kp LEFT_GUI     &trans
+&kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp EXCLAMATION  &kp QUESTION  &trans          &kp TAB         &kp DELETE       &trans
+&kp SLASH             &trans                 &trans           &kp UNDER     &kp LEFT_ARROW  &kp UP_ARROW    &kp LEFT_GUI     &trans
                       &kp LA(N8)             &kp HASH                                       &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
