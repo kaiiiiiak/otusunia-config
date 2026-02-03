@@ -73,24 +73,17 @@
     };
 };
 
-/* ここから AML（入力プロセッサ方式） */
 / {
    trackball_listener: trackball_listener {
      compatible = "zmk,input-listener";
-     device = <&pointing_device>;
-     /* 入力が来たらレイヤー1を 2000ms だけ有効化 */
+     device = <&trackball>;
      input-processors = <&zip_temp_layer 1 2000>;
    };
 
    zip_temp_layer: zip_temp_layer {
      compatible = "zmk,input-processor-temp-layer";
      #input-processor-cells = <2>;
-
-     /* タイピング直後は発火しない（誤発火対策） */
      require-prior-idle-ms = <300>;
-
-     /* 任意: マウス用クリック等は押しても解除させたくない場合に物理番号を除外*/
      excluded-positions = <5 6>;
-      
    };
 };
